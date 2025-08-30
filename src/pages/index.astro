@@ -1,16 +1,21 @@
 ---
+import Layout from '../layouts/Layout.astro';
 
+const avatar = `http://www.gravatar.com/avatar/a5d3c731613dff2ebac6d9ccff93d10b731e75217a5bd1db032f1a3a5c887b03?s=80`;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <div class="font-mono flex p-8 flex-col gap-12 w-96 text-left">
+    <div class="flex items-center gap-2 font-medium">
+      <a href="/">aug.dog</a>
+      <span>/</span>
+      <a href="https://twitter.com/augusdogus" target="_blank" rel="noreferrer"
+        >twitter</a
+      >
+      <span>/</span>
+      <a href="https://github.com/augusdogus" target="_blank" rel="noreferrer"
+        >github</a
+      >
+    </div>
+  </div>
+</Layout>
